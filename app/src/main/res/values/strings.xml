@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Good Samaritan</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_alert_accepted">Alert Accepted</string>
+</resources>

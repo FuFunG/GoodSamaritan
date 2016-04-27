@@ -18,13 +18,7 @@
         <activity
             android:name=".ItemListActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".ItemDetailActivity"
             android:label="@string/title_item_detail"
@@ -33,6 +27,16 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs465.goodsamaritan.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".AlertAccepted"
+            android:label="Alert Accepted"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -46,9 +50,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".AlertAccepted"
-            android:label="@string/title_activity_alert_accepted"></activity>
+        <activity android:name=".EmergencyTutorial"></activity>
     </application>
 
 </manifest>

@@ -11,4 +11,3 @@ public class NotificationPage extends AppCompatActivity {
         setContentView(R.layout.activity_notification);
     }
 }
-public class

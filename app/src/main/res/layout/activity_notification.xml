@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="36dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Slide left or Right to Answer"
+            android:text="Slide Left or Right to Respond"
             android:id="@+id/textView6"
             android:layout_gravity="center_horizontal" />
 
@@ -94,6 +94,16 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <cs465.goodsamaritan.controls.SlideButton
+                android:id="@+id/declineButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="100"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/decline" >
+            </cs465.goodsamaritan.controls.SlideButton>
 
             <ImageButton
                 android:layout_width="200px"

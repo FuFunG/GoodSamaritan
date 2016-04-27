@@ -28,7 +28,8 @@
             android:typeface="normal"
             android:textIsSelectable="false"
             android:textSize="35dp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#ff0000" />
 
         <LinearLayout
             android:orientation="vertical"

@@ -15,6 +15,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -40,7 +44,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".EmergencySelector" />
-        <activity android:name=".RewardSamaritan"></activity>
+        <activity android:name=".RewardSamaritan" />
+        <activity android:name=".InitialScreen" />
+        <activity android:name=".AccidentAlertPage"></activity>
     </application>
 
 </manifest>

@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import cs465.goodsamaritan.helpers.GMapV2Direction;
 
-public class RepsonderMessage extends AppCompatActivity implements LocationListener {
+public class ResponderMessage extends AppCompatActivity implements LocationListener {
     GoogleMap googleMap = null;
 
     @Override

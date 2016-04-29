@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cs465.goodsamaritan.EmergencySelector">
+    tools:context="cs465.goodsamaritan.EmergencySelector"
+    android:nestedScrollingEnabled="false">
 
     <LinearLayout
         android:orientation="vertical"
@@ -38,7 +39,8 @@
             android:background="#ffffff"
             android:layout_above="@+id/imageButton4"
             android:layout_alignStart="@+id/imageButton4"
-            android:layout_marginBottom="29dp" />
+            android:layout_marginBottom="29dp"
+            android:onClick="emergencyClick" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +62,8 @@
             android:background="#ffffffff"
             android:layout_above="@+id/imageButton5"
             android:layout_alignStart="@+id/imageButton5"
-            android:layout_marginBottom="28dp" />
+            android:layout_marginBottom="28dp"
+            android:onClick="emergencyClick" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +84,8 @@
             android:scaleType="fitCenter"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:background="#ffffffff" />
+            android:background="#ffffffff"
+            android:onClick="emergencyClick" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="cs465.goodsamaritan">
+
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -25,9 +27,14 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -59,7 +66,8 @@
         <activity android:name=".RewardSamaritan" />
         <activity android:name=".InitialScreen" />
         <activity android:name=".AccidentAlertPage" />
-        <activity android:name=".tutorialZoom"></activity>
+        <activity android:name=".tutorialZoom" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

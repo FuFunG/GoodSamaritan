@@ -5,6 +5,9 @@
     <string name="title_activity_responder_page">Responer Information Page</string>
     <string name="title_activity_main__menu">Main_Menu</string>
     <string name="large_text">
+    <string name="str_rb_driving">Driving</string>
+    <string name="str_rb_bicycling">BiCycling</string>
+    <string name="str_rb_walking">Walking</string>
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."

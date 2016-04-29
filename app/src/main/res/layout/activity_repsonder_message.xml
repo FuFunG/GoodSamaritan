@@ -27,6 +27,7 @@
                 android:layout_height="200px"
                 android:layout_weight="1">
                 <TextView
+                    android:padding="25px"
                     android:layout_width="750px"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceSmall"
@@ -37,7 +38,7 @@
                     android:gravity="left"
                     android:textAlignment="textStart"
                     android:layout_gravity="right"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <ImageButton
@@ -48,16 +49,18 @@
                     android:src="@drawable/cameraicon"
                     android:scaleType="fitCenter"
                     android:background="#ffffff"
-                    android:onClick="Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;); startActivityForResult(intent, 0);" />
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonOnClick" />
             </LinearLayout>
 
         </LinearLayout>
 
         <fragment
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="500px"
             android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:id="@+id/fragment"
+            android:id="@+id/googleMap2"
             android:layout_gravity="center_horizontal" />
 
         <TextView
@@ -69,34 +72,33 @@
             android:layout_gravity="center_horizontal"
             android:textAlignment="center" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left">
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="131dp"
+                android:layout_height="500px"
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/editText"
                 android:hint="Add additional information here"
-                android:gravity="top" />
-        </LinearLayout>
+                android:gravity="top"
+                android:padding="25px"
+                android:background="@drawable/border"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:gravity="bottom">
 
-            <ImageButton
+            <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/imageButton2"
-                android:src="@drawable/redsubmitbutton"
                 android:scaleType="fitCenter"
-                android:background="#ffffff" />
+                android:background="#FF0000"
+                android:contextClickable="false"
+                android:textColor="#ffffff"
+                android:text="Submit Emergency"/>
         </LinearLayout>
 
     </LinearLayout>

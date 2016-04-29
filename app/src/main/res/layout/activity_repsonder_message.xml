@@ -99,7 +99,8 @@
                 android:background="#FF0000"
                 android:contextClickable="false"
                 android:textColor="#ffffff"
-                android:text="Submit Emergency"/>
+                android:text="Submit Emergency"
+                android:onClick="tutorial" />
         </LinearLayout>
 
     </LinearLayout>

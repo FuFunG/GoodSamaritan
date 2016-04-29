@@ -148,7 +148,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton8"
-                    android:scaleType="fitCenter" />
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pplogo" />
             </LinearLayout>
         </LinearLayout>
 
@@ -157,7 +158,8 @@
             android:layout_height="wrap_content"
             android:text="Submit"
             android:id="@+id/button"
-            android:layout_weight="0.52" />
+            android:layout_weight="0.52"
+            android:onClick="registrationFinished" />
 
     </LinearLayout>
 

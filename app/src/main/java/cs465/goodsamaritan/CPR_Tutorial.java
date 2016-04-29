@@ -1,5 +1,6 @@
 package cs465.goodsamaritan;
 
+import android.content.Intent;
 import android.widget.MediaController;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,9 +16,9 @@ public class CPR_Tutorial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tutorial);
-
         final ImageButton play = (ImageButton) findViewById(R.id.imageButton);
         final MediaController mediaController = new MediaController(this);
+        assert play != null;
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,5 +32,11 @@ public class CPR_Tutorial extends AppCompatActivity {
             }
 
         });
+    }
+    public void tutorialFinished(View v){
+        startActivity(new Intent(CPR_Tutorial.this, MenuActivity.class));
+    }
+    public void tutorialZoom(View v){
+        startActivity(new Intent(CPR_Tutorial.this, tutorialZoom.class));
     }
 }

@@ -118,4 +118,7 @@ public class ResponderMessage extends AppCompatActivity implements LocationListe
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
         startActivityForResult(intent, 0);
     }
+    public void tutorial(View v){
+        startActivity(new Intent(ResponderMessage.this, CPR_Tutorial.class));
+    }
 }

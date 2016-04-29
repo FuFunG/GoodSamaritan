@@ -58,7 +58,8 @@
             android:scaleType="fitCenter"
             android:background="#c13d28"
             android:layout_alignTop="@+id/imageButton7"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="mainMenu" />
 
         <ImageButton
             android:layout_width="400px"
@@ -69,24 +70,23 @@
             android:src="@drawable/yes"
             android:background="#89c04c"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="400px"
-        android:id="@+id/relativeLayout4">
+            android:layout_alignParentEnd="true"
+            android:onClick="lifeThreatening" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="EMERGENCY"
-            android:id="@+id/textView9"
-            android:textColor="#fb0404"
-            android:textStyle="bold"
-            android:textSize="55dp" />
+            android:id="@+id/textView16"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/imageButton7"
+            android:layout_above="@+id/imageView2"
+            android:textAlignment="center"
+            android:textSize="55dp"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

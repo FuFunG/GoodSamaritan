@@ -18,4 +18,5 @@ public class EmergencySelector extends AppCompatActivity {
          public void emergencyClick(View v){
              startActivity(new Intent(EmergencySelector.this, ResponderMessage.class));
         }
+
     }

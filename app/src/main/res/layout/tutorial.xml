@@ -111,17 +111,30 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="330dp"
-            android:layout_height="150dp">
+            android:layout_height="291dp"
+            android:weightSum="1">
 
             <ImageButton
-                android:layout_width="330dp"
-                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="450px"
                 android:id="@+id/imageView"
                 android:src="@drawable/recovery"
                 android:contentDescription="Cpr Tutorial"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:background="#ffffff" />
+                android:background="#ffffff"
+                android:contextClickable="false"
+                android:clickable="true"
+                android:onClick="tutorialZoom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Done"
+                android:id="@+id/button9"
+                android:layout_gravity="center_horizontal"
+                android:onClick="tutorialFinished"
+                android:layout_weight="0.41" />
         </LinearLayout>
 
     </LinearLayout>

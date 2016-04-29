@@ -126,7 +126,8 @@
                 android:text="Sign up"
                 android:drawableLeft="@drawable/register_wrapper"
                 android:drawablePadding="10px"
-                android:id="@+id/button" />
+                android:id="@+id/button"
+                android:onClick="signUp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -139,7 +140,8 @@
                 android:text="Sign in"
                 android:drawableLeft="@drawable/signin_wrapper"
                 android:drawablePadding="10px"
-                android:id="@+id/button2" />
+                android:id="@+id/button2"
+                android:onClick="signIn" />
 
         </LinearLayout>
 

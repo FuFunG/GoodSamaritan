@@ -1,5 +1,6 @@
 package cs465.goodsamaritan;
 
+import android.widget.MediaController;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,17 +17,15 @@ public class CPR_Tutorial extends AppCompatActivity {
         setContentView(R.layout.tutorial);
 
         final ImageButton play = (ImageButton) findViewById(R.id.imageButton);
-
+        final MediaController mediaController = new MediaController(this);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final VideoView videoView =
                         (VideoView) findViewById(R.id.videoView);
-                //videoView.setVideoPath("android.resource://cs465.goodsamaritan/" + R.video.cpr);
-
-                //MediaController mediaController = new MediaController(this);
-                //mediaController.setAnchorView(videoView);
-                //videoView.setMediaController(mediaController);
+                videoView.setVideoPath("android.resource://cs465.goodsamaritan/" + R.raw.cpr);
+                mediaController.setAnchorView(videoView);
+                videoView.setMediaController(mediaController);
                 play.setVisibility(View.GONE);
                 videoView.start();
             }

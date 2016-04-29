@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:src="@drawable/mr_ic_play_light"
+                android:src="@android:drawable/ic_media_play"
                 android:contentDescription="Play" />
 
         </FrameLayout>

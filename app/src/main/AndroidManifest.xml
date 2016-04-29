@@ -47,17 +47,17 @@
         <activity android:name=".AlertAccepted"
             android:label="@string/title_activity_alert_accepted" />
 
-        <activity android:name=".RepsonderMessage">
+        <activity android:name=".ResponderMessage"> </activity>
+
+        <activity android:name=".EmergencySelector">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".EmergencySelector" />
-        <activity android:name=".RewardSamaritan" />
-        <activity android:name=".InitialScreen" />
-        <activity android:name=".AccidentAlertPage" />
+        <activity android:name=".RewardSamaritan"> </activity>
+        <activity android:name=".InitialScreen"> </activity>
+        <activity android:name=".AccidentAlertPage"> </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs465.goodsamaritan.MenuActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:text="Non-Life-Threatening Emergency"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:text="Life-Threatening Emergency"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Register"
+            android:id="@+id/button4"
+            android:drawableLeft="@drawable/register_wrapper"
+            android:drawablePadding="3dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Sign In"
+            android:drawableLeft="@drawable/signin_wrapper"
+            android:id="@+id/button5"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Reward Good Samaritan"
+            android:drawableLeft="@drawable/gift_wrapper"
+            android:id="@+id/button6"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Notifications"
+            android:drawableLeft="@drawable/bell_wrapper"
+            android:id="@+id/button7"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="Settings"
+            android:drawableLeft="@drawable/settings_wrapper"
+            android:drawablePadding="5px"
+            android:id="@+id/button8"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

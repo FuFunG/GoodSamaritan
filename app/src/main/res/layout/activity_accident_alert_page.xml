@@ -104,6 +104,7 @@
             android:id="@+id/button"
             android:background="#045df7"
             android:textStyle="bold"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:onClick="accssPic" />
     </LinearLayout>
 </RelativeLayout>

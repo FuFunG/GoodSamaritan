@@ -12,12 +12,14 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -252,5 +254,8 @@ public class AccidentAlertPage extends FragmentActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main__menu, menu);
         return true;
+    }
+    public void accssPic(View v) {
+        startActivity(new Intent(AccidentAlertPage.this, AccidentPicture.class));
     }
 }

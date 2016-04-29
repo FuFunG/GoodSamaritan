@@ -29,19 +29,15 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_horizontal"></LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -59,13 +55,9 @@
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"></LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
                 <EditText
                     android:layout_width="250dp"
@@ -76,25 +68,21 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"></LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Password"
+                    android:text="Password:"
                     android:id="@+id/textView9" />
             </LinearLayout>
         </LinearLayout>
@@ -105,15 +93,12 @@
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"></LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
                 <EditText
                     android:layout_width="250dp"
@@ -127,28 +112,33 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="60dp">
+            android:layout_height="60dp"
+            android:layout_marginTop="25px">
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="60dp"
+                android:layout_width="40dp"
                 android:layout_height="match_parent"></LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign up"
+                android:drawableLeft="@drawable/register_wrapper"
+                android:drawablePadding="10px"
                 android:id="@+id/button" />
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="35dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"></LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign in"
+                android:drawableLeft="@drawable/signin_wrapper"
+                android:drawablePadding="10px"
                 android:id="@+id/button2" />
 
         </LinearLayout>

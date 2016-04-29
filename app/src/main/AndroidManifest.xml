@@ -54,7 +54,7 @@
         <activity
             android:name=".AlertAccepted"
             android:label="@string/title_activity_alert_accepted" />
-        <activity android:name=".RepsonderMessage" />
+        <activity android:name=".ResponderMessage" />
         <activity android:name=".CPR_Tutorial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,6 +68,7 @@
         <activity android:name=".AccidentAlertPage" />
         <activity android:name=".tutorialZoom" />
         <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".NotificationPage"></activity>
     </application>
 
 </manifest>

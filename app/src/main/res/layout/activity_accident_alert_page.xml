@@ -9,44 +9,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cs465.goodsamaritan.AccidentAlertPage">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200px"
-        android:weightSum="1"
-        android:id="@+id/linearLayout2">
+        android:id="@+id/relativeLayout5">
 
         <TextView
-            android:layout_width="400px"
-            android:layout_height="wrap_content"
+            android:layout_width="520px"
+            android:layout_height="300px"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Location of Alerter: \n 201 N Goodwin Ave"
             android:id="@+id/textView12"
-            android:layout_weight="0.68"
-            android:textSize="25dp"
+            android:layout_weight="0.33"
+            android:textSize="19dp"
             android:textStyle="bold"
             android:textColor="#080808"
-            android:layout_gravity="top" />
+            android:layout_gravity="top"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
-            android:layout_width="0px"
+            android:layout_width="200px"
             android:layout_height="170px"
             android:id="@+id/imageButton9"
-            android:layout_weight="0.35"
             android:src="@drawable/phone"
             android:scaleType="fitCenter"
-            android:background="#ffffff" />
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView19" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Click here to call Alerter"
+            android:id="@+id/textView19"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="700px"
-        android:layout_below="@+id/linearLayout2"
         android:weightSum="1"
         android:id="@+id/linearLayout3"
-        android:layout_alignEnd="@+id/linearLayout2">
+        android:layout_below="@+id/relativeLayout5">
 
         <fragment
             android:layout_width="match_parent"

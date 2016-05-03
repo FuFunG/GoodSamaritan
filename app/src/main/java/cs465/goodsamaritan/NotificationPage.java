@@ -16,6 +16,7 @@ public class NotificationPage extends AppCompatActivity {
     public void no(View v){
         startActivity(new Intent(NotificationPage.this, MainThread.class));
     }
+
     public void yes(View v){
         startActivity(new Intent(NotificationPage.this, AccidentAlertPage.class));
     }

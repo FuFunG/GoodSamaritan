@@ -16,7 +16,8 @@
         android:weightSum="1"
         android:layout_alignParentTop="true"
         android:id="@+id/linearLayout2"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -149,12 +150,13 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton8"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pplogo" />
+                    android:src="@drawable/pplogo"
+                    android:onClick="paypalLinkAccount" />
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:id="@+id/button"

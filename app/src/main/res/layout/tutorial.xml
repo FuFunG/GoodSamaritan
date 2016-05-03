@@ -148,7 +148,7 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
             android:layout_alignParentBottom="true"
@@ -158,7 +158,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:text="Done"
+                android:text="End Emergency"
                 android:id="@+id/button9"
                 android:layout_gravity="center_horizontal"
                 android:onClick="tutorialFinished"

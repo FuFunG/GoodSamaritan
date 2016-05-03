@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.VideoView;
 
 public class CPR_Tutorial extends AppCompatActivity {
-    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+    AlertDialog.Builder dialogBuilder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,8 @@ public class CPR_Tutorial extends AppCompatActivity {
                 videoView.start();
             }
         });
+
+        dialogBuilder = new AlertDialog.Builder(this);
 
         dialogBuilder.setTitle("Are you sure?")
                 .setMessage("Are you sure you wish to end the current emergency?");

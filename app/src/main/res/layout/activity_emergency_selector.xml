@@ -22,13 +22,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/linearLayout9">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Select the type of \n Life Threatening \n Emergency"
+            android:text="Select the type of Life Threatening Emergency"
             android:id="@+id/textView2"
             android:textAlignment="center" />
+        </LinearLayout>
 
         <ImageButton
             android:layout_width="300px"
@@ -37,10 +42,9 @@
             android:src="@drawable/drowning"
             android:scaleType="fitCenter"
             android:background="#ffffff"
-            android:layout_above="@+id/imageButton4"
-            android:layout_alignStart="@+id/imageButton4"
-            android:layout_marginBottom="29dp"
-            android:onClick="emergencyClick" />
+            android:onClick="emergencyClick"
+            android:layout_below="@+id/linearLayout9"
+            android:layout_alignStart="@+id/imageButton4" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,10 +52,11 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Drowning"
             android:id="@+id/textView4"
-            android:layout_marginTop="37dp"
             android:textColor="#000000"
-            android:layout_alignTop="@+id/imageButton3"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3"
+            android:layout_marginBottom="36dp"
+            android:paddingLeft="10dp"/>
 
         <ImageButton
             android:layout_width="300px"
@@ -60,10 +65,10 @@
             android:src="@drawable/injury"
             android:scaleType="fitCenter"
             android:background="#ffffffff"
+            android:layout_marginBottom="45dp"
+            android:onClick="emergencyClick"
             android:layout_above="@+id/imageButton5"
-            android:layout_alignStart="@+id/imageButton5"
-            android:layout_marginBottom="28dp"
-            android:onClick="emergencyClick" />
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,6 +79,7 @@
             android:layout_alignBottom="@+id/imageButton4"
             android:layout_alignStart="@+id/textView6"
             android:layout_marginBottom="30dp"
+            android:paddingLeft="10dp"
             android:textColor="#0c0c0c" />
 
         <ImageButton
@@ -96,6 +102,7 @@
             android:textColor="#0a0a0a"
             android:layout_alignBottom="@+id/imageButton5"
             android:layout_alignStart="@+id/textView4"
+            android:paddingLeft="10dp"
             android:layout_marginBottom="36dp" />
     </RelativeLayout>
 
